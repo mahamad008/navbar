@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+::-webkit-input-placeholder { color: black; }
+:-moz-placeholder { color: black; }
+::-moz-placeholder { color: black; }
+:-ms-input-placeholder { color: black; }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*///////// NAV /////////*/
+nav a { display: block; }
+nav a.underlined {
+  text-align: center;
+  border-bottom: 4px solid transparent;
+}
+nav a.underlined:hover { border-bottom-color: #262626; }
+nav #logo-menu li:nth-child(2) a.underlined:hover { border-bottom-color: #18b; }
+nav #logo-menu li:nth-child(3) a.underlined:hover { border-bottom-color: #921; }
+nav #logo-menu li:nth-child(4) a.underlined:hover { border-bottom-color: #fe1; }
+nav #logo-menu li:nth-child(5) a.underlined:hover { border-bottom-color: #8ce; }
+nav #logo-menu li:nth-child(6) a.underlined:hover { border-bottom-color: #ed3d7d; }
+nav #primary-nav a.underlined:hover { border-bottom-color: white; }
+nav #sub-nav a.underlined:hover { border-bottom-color: #cc0101; }
+
+nav #logo-menu {
+  border-bottom: 1px solid #ccc;
+}
+nav #logo-menu .content {
+  display: table;
+  width: 100%;
+}
+nav #logo-menu ul {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav #logo-menu li {
+  display: table-cell;
+  vertical-align: top;
+  line-height: 40px;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 14px;
+}
+nav #logo-menu .sign-in img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+nav #logo-menu .search {
+  border-right: 0;
+}
+nav #logo-menu .logo { width: 1px; }
+nav #logo-menu .search { width: 220px; }
+nav #logo-menu .search .search-container {
+  margin: 8px;
+  height: 24px;
+  background: #e4e4e4;
+}
+nav #logo-menu .search .search-container input,
+nav #logo-menu .search .search-container img { vertical-align: top; }
+nav #logo-menu .search .search-container input {
+  background: transparent;
+  border: none;
+  width: 167px;
+  padding: 0 0 0 5px;
+  line-height: 24px;
+  font-weight: bold;
+}
+nav #logo-menu .search .search-container .search-button {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+}
+nav #logo-menu .search .search-container .search-button img {
+  margin-top: 4px;
+  vertical-align: top;
+}
+nav #logo-menu .logo img {
+  display: inline-block;
+  margin: 8px;
+  vertical-align: top;
+}
+nav #logo-menu .sign-in { width: 170px; }
+nav #logo-menu .sign-in a.underlined { text-align: left; }
+nav #logo-menu li a.underlined {
+  height: 36px;
+  padding: 0 15px;
+}
+
+nav .red-header { background-color: #0104cc; }
+
+nav #department,
+nav #primary-nav { color: white; }
+
+nav #department a {
+  color: white;
+  display: inline-block;
+}
+nav #department h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 3px 0;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+nav #department #find-local {
+  margin-top: 11px;
+  padding: 0 25px 0 5px;
+  float: right;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: url("//static.bbci.co.uk/news/1.66.2287/img/news--icons-sprite.png") no-repeat right -5902px;
+}
+nav #department #find-local a {
+  margin: 0;
+  padding: 4px 5px;
+  font-size: 1.2em;
+}
+nav #department #find-local a:hover { text-decoration: underline; }
+nav #department #find-local a p { margin: 0; }
+
+nav #primary-nav {
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+nav #primary-nav .content {
+  display: table;
+  width: 100%;
+}
+nav #primary-nav ul {
+  display: table-row;
+  height: 36px;
+}
+nav #primary-nav li {
+  display: table-cell;
+  position: relative;
+}
+nav #primary-nav li:after {
+  content: '';
+  width: 1px;
+  height: 18px;
+  background-color: rgba(255,255,255,0.4);
+  position: absolute;
+  top: 8px;
+  right: 0px;
+}
+nav #primary-nav li:last-child:after {
+  content: none;
+}
+nav #primary-nav ul li:last-child a {
+  padding-right: 20px;
+}
+nav #primary-nav ul li:last-child a:after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+  content: '';
+  height: 0;
+  position: relative;
+  right: -10px;
+  top: 11px;
+  width: 0;
+}
+nav #primary-nav ul li:last-child a:hover {
+  background-color: black;
+  border-bottom-color: black;
+}
+nav #primary-nav a {
+  font-size: 15px;
+  color: white;
+  padding: 8px 12px;
+  max-height: 16px;
+}
+nav #primary-nav ul li a.active { border-bottom-color: white; }
+
+nav #sub-nav ul {
+  margin: 6px 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav #sub-nav ul li {
+  position: relative;
+  display: inline-block;
+}
+nav #sub-nav ul li:after {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: rgba(0,0,0,0.15);
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+nav #sub-nav ul li:last-child:after { content: none; }
+nav #sub-nav ul li a {
+  font-size: 15px;
+  padding: 3px 12px;
+}
+/*///////// End NAV /////////*/
+
+.tag {
+  font-size: 80%;
+  text-transform: uppercase;
+  padding: 0px 4px;
+  margin-right: 5px;
+}
+.tag.sport { background-color: #ffdf43; }
+
+main {
+  margin-top: 20px;
+}
+main .content { position: relative; }
+
+main .main-content,
+main .sidebar {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .main-content {
+  width: 70%;
+  padding: 0 15px 0 6px;
+}
+main .main-content article {
+  position: relative;
+  min-height: 270px;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #eee;
+}
+main .main-content article img.article-image {
+  float: right;
+  margin-left: 10px;
+}
+main .main-content article h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: black;
+}
+main .main-content article a:hover h2 { color: #1167a8; }
+main .main-content article p {
+  color: #5a5a5a;
+  line-height: 1.2em;
+  font-size: 0.9em;
+}
+article .post-data {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0 0 0 -10px;
+  padding-left: 30px;
+  background-image: url("//static.bbci.co.uk/news/1.66.2287/img/news--icons-sprite.png");
+  background-position: left -4011px;
+  background-repeat: no-repeat;
+}
+article .post-data a.country {
+  color: #cc0101;
+  margin-left: 15px;
+  position: relative;
+}
+main .main-content article .post-data a.country:hover { color: #1167a8; }
+main .main-content article .post-data a.country:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -8px;
+  width: 1px;
+  height: 15px;
+  background: #ddd;
+}
+main .main-content article .related-links {
+  position: relative;
+  padding: 0;
+  margin-top: 15px;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+main .main-content article .related-links:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background: #cc0101;
+}
+main .main-content article .related-links a:hover { color: #1167a8; }
+main .main-content article .related-links .icon {
+  width: 16px;
+  height: 16px;
+  background: url("//myriad3d.co.uk/asset_hosting/codepen/bbc/sprite-2.png") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+main .main-content article .related-links .icon.video { background-position: -8px -285px; }
+
+
+
+main .sidebar {
+  width: 30%;
+  padding-left: 15px;
+  border-left: 1px solid #eee;
+}
+main .sidebar h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+main .sidebar article { min-height: 60px; }
+main .sidebar article h3 { font-size: 1em; }
+main .sidebar article a:hover h3 { color: #1167a8; }
+main .sidebar article .image {
+  position: relative;
+  margin-right: 10px;
+  float: left;
+}
+main .sidebar article .image .time {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 6px 8px 6px 20px;
+  background: white;
+  font-size: 0.8em;
+}
+main .sidebar article .image .time:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid black;
+}
